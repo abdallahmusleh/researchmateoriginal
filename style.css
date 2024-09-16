@@ -17,68 +17,66 @@ body {
 
 h1 {
   font-size: 5rem;
-  display: block;
-  width: 1000px;
+  
 }
 h2{
   color: midnightblue;
 }
 
 footer {
-  clear: both;
   text-align: right;
   color: midnightblue;
+  clear: both;
+  margin-top: 24%;
 }
 span{
   color: midnightblue;
 }
 .left{
-  font-size: 1.2rem;
-  display: inline-block;
-  width: 650px;
-  margin-right: 112px;
+
+  float: left;
 }
 .right{
-  font-size: 1.2rem;
-  display: inline-block;
-  width: 650px;
+  
+  float: right;
 }
 .tile-image{
   width: 300px;
   height: 270px;
-  float: left;
   margin-right: 50px;
-  margin-top: 0px;
+  float: left;
 }
-.left .tile-image{
-  margin-top: -30px;
+.card{
+  width: 45%;
 }
 
 
-.card-text, .right p {
-  display: inline-block;
-  width: 280px;
-}
+
+
 .container, .container a{
   background-color: midnightblue;
   color: white;
   display: flex;
-  gap: 25rem;
-  margin-left: 50px;
+  gap: 20%;
+  margin-left: 5%;
+  justify-content: center;
 }
-  
+.h1container{
+  display: flex;
+  justify-content: center;
+}
 
-@media (max-width: 600px){
+  
+@media (max-width: 700px){
+  .container, .container a{
+    gap: 15%;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 680px){
   h1{
     text-align: center;
     font-size: 3.5rem;
-    display: block;
-    width: 300px;
-  }
-  .logo{
-    width: 180px;
-    height: 45px;
-    position: relative;
   }
   .tile-image{
     width: 350px;
@@ -86,9 +84,11 @@ span{
     object-fit: cover;
   }
   .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
     text-align: justify;
   }
 
 }
-
 
